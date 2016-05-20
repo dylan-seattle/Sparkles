@@ -4,8 +4,7 @@ SparkleFormation.dynamic(:instance_common) do |_name, _config|
   parameters do
     set!("#{_name}_image_id".to_sym) do
       #need default instances - here 
-      default 'ami-ad42009d'
-      allowed_values ['ami-ad42009d', 'ami-c7d092f7']
+      default 'ami-9abea4fb'
       description 'AMI Image ID'
       type 'String'
     end

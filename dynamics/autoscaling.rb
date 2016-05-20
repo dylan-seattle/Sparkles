@@ -44,6 +44,7 @@ SparkleFormation.dynamic(:autoscaling) do |_name, _config={}|
         launch_configuration_name ref!("#{_name}_launch_configuration".to_sym)
         min_size ref!("#{_name}_asg_min_size".to_sym)
         max_size ref!("#{_name}_asg_max_size".to_sym)
+        notification_configuration "TopicArn" => ref!("#{_name}_notification_topic".to_sym), "NotificationTypes" => registry!(:notification_type) 
       end
     end
 
