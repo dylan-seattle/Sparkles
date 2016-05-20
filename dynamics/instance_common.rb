@@ -16,7 +16,7 @@ SparkleFormation.dynamic(:instance_common) do |_name, _config|
     end
 
     set!("#{_name}_key_name".to_sym) do
-      default 'worpress-labs'
+      default 'SpakleKey'
       description 'EC2 SSH key name'
       type 'String'
     end

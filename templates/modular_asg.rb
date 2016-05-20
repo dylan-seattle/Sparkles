@@ -18,7 +18,7 @@ SparkleFormation.new(:modular_asg).load(:base).overrides do
     :registry => :metadata_labs
   )
 
-  resources.sparkle_autoscaling_group do
+  resources.sparkle_launch_configuration do
   properties.security_groups [ref!(:sparkle_security_group)]
   end
 
